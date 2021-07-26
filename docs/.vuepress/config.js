@@ -29,6 +29,9 @@ module.exports = {
       title: '功能设置',
       children: [
         'guide/微博',
+        'guide/Bilibili',
+        'guide/知乎',
+        'guide/少数派',
         'guide/YouTube',
       ]
     }
