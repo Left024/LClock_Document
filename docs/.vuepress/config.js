@@ -2,7 +2,10 @@ module.exports = {
   head: [
     ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }],
     ['link', { rel: 'icon', href: '/favicon-32x32.png' }],
-    ['link', { rel: 'icon', href: '/favicon-16x16.png' }]
+    ['link', { rel: 'icon', href: '/favicon-16x16.png' }],
+    ['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js' }],
+    ['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js' }],
+    ['link', { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css' }]
   ],
   title: 'L-Clock',
   description: '让你的老旧设备重获新生',
