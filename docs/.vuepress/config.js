@@ -37,6 +37,8 @@ module.exports = {
         'guide/网易云音乐',
         'guide/酷安',
         'guide/YouTube',
+        'guide/Twitter',
+        'guide/Steam',
       ]
     }
   ]
