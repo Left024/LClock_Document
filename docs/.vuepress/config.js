@@ -9,8 +9,10 @@ module.exports = {
   ],
   title: 'L-Clock',
   description: '让你的老旧设备重获新生',
-
   themeConfig: {
+    lastUpdated: '最后更新时间',
+    sidebarDepth: 2,
+    smoothScroll: true,
     nav: [
       { text: '指南', link: '/guide/循环模式' },
       { text: '更新日志', link: '/changelog' },
@@ -32,6 +34,8 @@ module.exports = {
         'guide/Bilibili',
         'guide/知乎',
         'guide/少数派',
+        'guide/网易云音乐',
+        'guide/酷安',
         'guide/YouTube',
       ]
     }
