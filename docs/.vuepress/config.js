@@ -39,6 +39,7 @@ module.exports = {
         'guide/YouTube',
         'guide/Twitter',
         'guide/Steam',
+        'guide/天气',
       ]
     }
   ]
