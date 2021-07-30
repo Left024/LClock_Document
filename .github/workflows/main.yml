@@ -1,0 +1,45 @@
+name: CI
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ main ]
+  
+env: # 设置环境变量
+    TZ: Asia/Shanghai # 时区（设置时区可使页面中的`最近更新时间`使用时区时间）
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - name: Checkout    
+        uses: actions/checkout@v2    #这里使用了github官方提供的action,checkout项目到虚拟机上
+      - name: Use Node.js ${{ matrix.node-version }} # 步骤2
+        uses: actions/setup-node@v2.3.0 # 作用：安装nodejs
+        with:
+          node-version: ${{ matrix.node-version }} # 版本
+      - name: Build
+        run: npm run docs:build
+          
+      - name: SFTP Deploy
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.1
+        with:
+          username: 'root'
+          # your sftp server
+          server: '${{ secrets.SSH_IP }}'
+          # your sftp server port, default to 22
+          port: '${{ secrets.SSH_PORT }}'
+          # you can copy private_key from your *.pem file, keep format
+          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          # will put all file under this path
+          local_path: './docs/.vuepress/dist/*'
+          # files will copy to under remote_path
+          remote_path: '/var/www/lclock/'
