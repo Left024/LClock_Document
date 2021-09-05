@@ -16,8 +16,7 @@ module.exports = {
     nav: [
       { text: '指南', link: '/guide/循环模式' },
       { text: '更新日志', link: '/changelog' },
-      { text: '下载', link: '/download' },
-      { text: '激活码购买', link: 'https://shop.left.pink' }
+      { text: '下载', link: '/download' }
 	],
   sidebar: [
     {
