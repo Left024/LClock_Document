@@ -43,5 +43,11 @@ module.exports = {
       ]
     }
   ]
-  }
+  },
+  plugins: [
+    'umami': { trackerUrl: 'https://umami.left.pink', siteId: '501db1a2-3b3f-4049-8d8f-76d5e97e46d2' }
+
+    // other plugins
+    // ...
+  ]
 }
