@@ -27,7 +27,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }} # 版本
       - name: Build
-        run: npm install vuepress-plugin-umami && npm run docs:build
+        run: npm run docs:build
           
       - name: SFTP Deploy
         uses: wlixcc/SFTP-Deploy-Action@v1.2.1

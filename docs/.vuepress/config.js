@@ -5,7 +5,9 @@ module.exports = {
     ['link', { rel: 'icon', href: '/favicon-16x16.png' }],
     ['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js' }],
     ['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js' }],
-    ['link', { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css' }]
+    ['link', { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css' }],
+    ['script',{ async: true, defer: true, src: 'https://umami.left.pink/umami.js'}],
+    ['data-website-id', '501db1a2-3b3f-4049-8d8f-76d5e97e46d2']
   ],
   title: 'L-Clock',
   description: '让你的老旧设备重获新生',
@@ -44,10 +46,11 @@ module.exports = {
     }
   ]
   },
+  /**
   plugins: [
     'umami', { trackerUrl: 'https://umami.left.pink', siteId: '501db1a2-3b3f-4049-8d8f-76d5e97e46d2' }
 
     // other plugins
     // ...
-  ]
+  ]*/
 }
