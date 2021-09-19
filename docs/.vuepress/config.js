@@ -6,8 +6,7 @@ module.exports = {
     ['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js' }],
     ['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js' }],
     ['link', { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css' }],
-    ['script',{ async: true, defer: true, src: 'https://umami.left.pink/umami.js'}],
-    ['data-website-id', '501db1a2-3b3f-4049-8d8f-76d5e97e46d2']
+    ['script',{ async, defer, 'data-website-id': '501db1a2-3b3f-4049-8d8f-76d5e97e46d2', src: 'https://umami.left.pink/umami.js'}],
   ],
   title: 'L-Clock',
   description: '让你的老旧设备重获新生',
