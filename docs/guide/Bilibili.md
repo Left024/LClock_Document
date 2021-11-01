@@ -20,3 +20,12 @@ title: Bilibili
 
 打开电脑端 Bilibili 并**登录**，登陆完成后点击链接旁的锁图标
 
+<a data-fancybox title="" href="/Snipaste_2021-11-01_10-46-41.png">![](/Snipaste_2021-11-01_10-46-41.png)</a>
+
+点击 ```Cookie``` 并在弹出窗口中展开 ```bilibili.com```
+
+<a data-fancybox title="" href="/Snipaste_2021-11-01_10-47-02.png">![](/Snipaste_2021-11-01_10-47-02.png)</a>
+
+展开后找到 ```SESSDATA``` ，选择后的 ```内容``` 即为 ```SESSDATA```
+
+<a data-fancybox title="" href="/Snipaste_2021-11-01_10-47-27.png">![](/Snipaste_2021-11-01_10-47-27.png)</a>
