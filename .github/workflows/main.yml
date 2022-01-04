@@ -27,7 +27,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }} # 版本
       - name: Build
-        run: npm run docs:build
+        run: npm install -D vuepress && npm run docs:build
           
       - name: SFTP Deploy
         uses: wlixcc/SFTP-Deploy-Action@v1.2.1
