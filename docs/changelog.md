@@ -3,7 +3,7 @@ title: 更新日志
 sidebar: false
 ---
 
-# 更新日志test
+# 更新日志
 
 ## 0.46C.r362.a0a17af(2022/03/01)
 
