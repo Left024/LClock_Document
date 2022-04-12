@@ -10,5 +10,5 @@ features:
   details: 每次展示单个内容的循环模式；同一页面显示多个内容的自定义模式
 - title: 持续更新
   details: 后续将持续添加社交媒体显示，以及其它数据展示等等功能，敬请期待。
-footer: Copyright © 2021 Left
+footer: Copyright © 2022 Left
 ---
