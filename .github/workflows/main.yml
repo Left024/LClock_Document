@@ -43,3 +43,18 @@ jobs:
           local_path: './docs/.vuepress/dist/*'
           # files will copy to under remote_path
           remote_path: '/var/www/lclock/'
+          
+      - name: SFTP Deploy to another location
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.1
+        with:
+          username: 'root'
+          # your sftp server
+          server: '${{ secrets.SSH_IPP }}'
+          # your sftp server port, default to 22
+          port: '${{ secrets.SSH_PORTT }}'
+          # you can copy private_key from your *.pem file, keep format
+          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEYY }}
+          # will put all file under this path
+          local_path: './docs/.vuepress/dist/*'
+          # files will copy to under remote_path
+          remote_path: '/var/www/lclock/'
