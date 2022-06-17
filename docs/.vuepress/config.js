@@ -16,6 +16,7 @@ module.exports = {
     smoothScroll: true,
     nav: [
       { text: '指南', link: '/guide/循环模式' },
+      { text: '隐私', link: '/privacy' },
       { text: '更新日志', link: '/changelog' },
       { text: '下载', link: '/download' }
 	],
